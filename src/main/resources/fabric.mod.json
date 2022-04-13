@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "exampleconfig",
+  "version": "${version}",
+  "name": "Exampleconfig",
+  "description": "A way of how code a configuration file system for a mod",
+  "authors": [
+    "Skyfy16"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/exampleconfig/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ch.skyfy.exampleconfig.client.ExampleconfigClient"
+    ],
+    "main": [
+      "ch.skyfy.exampleconfig.Exampleconfig"
+    ]
+  },
+  "mixins": [
+    "exampleconfig.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
